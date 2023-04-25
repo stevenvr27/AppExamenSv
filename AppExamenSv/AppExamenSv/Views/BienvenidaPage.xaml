@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppExamenSv.Views.BienvenidaPage"
+             Shell.NavBarHasShadow="False"
+             NavigationPage.HasBackButton="False"
+             Background="#112">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" >
+            <Label Text="Bienvenido a tu app Favorita!"
+                   TextColor="White"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="CenterAndExpand" 
+                   FontSize="25"/>
+            <Entry x:Name="txtUserName" Placeholder="Usuario" TextColor="White"  PlaceholderColor="White" HorizontalOptions="FillAndExpand" Keyboard="Email"    ></Entry>
+            <Entry x:Name="txtPassword" Placeholder="Contraseña" TextColor="White" PlaceholderColor="White" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"     ></Entry>
+            <Button x:Name="login" Text="login" HorizontalOptions="FillAndExpand" VerticalOptions="End"  BackgroundColor="Transparent" BorderWidth="1.5" BorderColor="Green" CornerRadius="100" TextColor="White" Clicked="login_Clicked" ></Button>
+            <Button x:Name="ps" Text="Ver todas las preguntas" HorizontalOptions="FillAndExpand" VerticalOptions="End"  BackgroundColor="Transparent" BorderWidth="1.5" BorderColor="SaddleBrown" CornerRadius="100" TextColor="White" Clicked="ps_Clicked" ></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

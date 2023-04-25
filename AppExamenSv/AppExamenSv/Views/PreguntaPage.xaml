@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppExamenSv.Views.PreguntaPage"
+             BackgroundColor="#112">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label FontSize="20" Margin="50" Text="Crea una pregunta  !"
+                   TextColor="White"
+                    TextDecorations="Underline"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+             
+            <Entry x:Name="Txtpregunta" Placeholder="Respuesta" PlaceholderColor="White"  TextColor="White" ></Entry>
+            
+
+            <Button x:Name="push" Text="Agregar" TextColor="White" BackgroundColor="Transparent" BorderColor="Green" BorderWidth="3.0" CornerRadius="60" Clicked="push_Clicked"  ></Button>
+ 
+      
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
